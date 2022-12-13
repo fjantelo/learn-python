@@ -5,11 +5,9 @@
 
 def flatten_hash(input):
     output = []
-    keys = list(input.keys())
-    values = list(input.values())
-    for i in range(0, len(keys)):
-        output.append(keys[i])
-        output.append(values[i])
+    for k, v in input.items():
+        output.append(k)
+        output.append(v)
     return output
 
 
