@@ -14,6 +14,7 @@ def two_sum(input):
     for number in input:
         if number in numbers.keys():
             output = [numbers[number], number]
+            break
         else:
             numbers[10 - number] = number
     return output
